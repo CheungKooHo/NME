@@ -2,8 +2,8 @@
  * @Author: Coan
  * @Date: 2022-08-22 10:56:41
  * @LastEditors: Coan
- * @LastEditTime: 2022-08-22 18:06:08
- * @FilePath: /nme/src/views/exam.vue
+ * @LastEditTime: 2022-08-22 21:26:54
+ * @FilePath: \NME\src\views\exam.vue
  * @Description:
 -->
 <template>
@@ -19,26 +19,37 @@
       </button>
       <div v-else>
         答题试卷
-        <template v-for="(item, index) in 4" :key="item">
+        <template
+          v-for="(item, index) in store.state.subjectList"
+          :key="item.id"
+        >
           <div class="subjectItem" v-show="index + 1 === currentIndex">
             <div class="type" style="border-bottom: 1px solid #cecccc">
               <h4 style="margin: 0">
-                题型：<span style="font-size: 32px; color: red">A1</span>
+                题型：<span style="font-size: 32px; color: red">{{
+                  item.type
+                }}</span>
               </h4>
               <p style="margin: 0 0 30px 0">
-                &nbsp;&nbsp;&nbsp;&nbsp;每一道试题下面有A、B、C、D、E五个备选答案，请从中选择一个最佳答案，并用鼠标选中相应答案前的方框，以示正确答案，备选答案前的选择框中出现“√”即为选中。
+                &nbsp;&nbsp;&nbsp;&nbsp;{{
+                  store.state.typeDescribe[item.type]
+                }}
               </p>
             </div>
 
             <div class="main" style="height: 69vh">
               <h4 style="margin: 0">第{{ index + 1 }}题</h4>
               <h4 class="describe" style="margin: 0">
-                目前谈到的医学模式转变是指
+                {{ item.describe }}
               </h4>
               <div class="options" style="margin: 0">
-                <div class="optionItem" v-for="item in 5" style="margin: 10px">
-                  <input type="checkbox" :name="item + ''" id="" />
-                  A. 深入访谈法
+                <div
+                  class="optionItem"
+                  v-for="option in item.options"
+                  style="margin: 10px"
+                >
+                  <input type="checkbox" :name="option" id="" />
+                  {{ option }}
                 </div>
               </div>
             </div>
@@ -51,10 +62,10 @@
             border-bottom: 1px solid #cecccc;
           "
         >
-          <button>标疑</button>
+          <button @click="wonder(currentIndex)">标疑</button>
           <button>转到未答题</button>
           <button>转到标疑题</button>
-          <button>上一题</button>
+          <button @click="currentIndex--">上一题</button>
           <button @click="currentIndex++">下一题</button>
           <button @click="finish">结束考试</button>
         </div>
@@ -122,6 +133,7 @@ const store = useStore();
 
 let isStart = ref(false);
 function start() {
+  store.commit('_getSubjectList');
   // alert('注意：考试已经开始！');
   let timestamp = new Date().getTime(); //当前的时间戳
   let beginExamTime = timeComputed(timestamp);
@@ -138,6 +150,10 @@ function finish() {
 }
 
 let currentIndex = ref(1);
+
+function wonder(index) {
+  console.log(index);
+}
 
 function timeComputed(time: number) {
   let date = new Date(time);

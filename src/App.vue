@@ -2,8 +2,8 @@
  * @Author: Coan
  * @Date: 2022-08-22 10:14:36
  * @LastEditors: Coan
- * @LastEditTime: 2022-08-22 17:02:31
- * @FilePath: /nme/src/App.vue
+ * @LastEditTime: 2022-08-22 21:04:56
+ * @FilePath: \NME\src\App.vue
  * @Description:
 -->
 
@@ -14,6 +14,8 @@ import Rule from './views/rule.vue';
 import Exam from './views/exam.vue';
 import { ref, onMounted } from 'vue';
 import bus from './utils/bus';
+import { useStore } from 'vuex';
+const store = useStore();
 
 let route = ref(4);
 const router: Record<number, any> = {
@@ -33,6 +35,7 @@ onMounted(() => {
   bus.on('finish', () => {
     alert('计算成绩并保存,确认返回首页');
     route.value = 1;
+    store.commit('_finish');
   });
 });
 </script>
