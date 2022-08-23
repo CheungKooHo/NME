@@ -2,8 +2,8 @@
  * @Author: Coan
  * @Date: 2022-08-22 10:56:41
  * @LastEditors: Coan
- * @LastEditTime: 2022-08-22 21:26:54
- * @FilePath: \NME\src\views\exam.vue
+ * @LastEditTime: 2022-08-23 15:34:43
+ * @FilePath: /NME/src/views/exam.vue
  * @Description:
 -->
 <template>
@@ -18,12 +18,12 @@
         进入考试
       </button>
       <div v-else>
-        答题试卷
+        答题试卷{{ store.state.wonderIndexList }}
         <template
           v-for="(item, index) in store.state.subjectList"
           :key="item.id"
         >
-          <div class="subjectItem" v-show="index + 1 === currentIndex">
+          <div class="subjectItem" v-show="index === currentIndex">
             <div class="type" style="border-bottom: 1px solid #cecccc">
               <h4 style="margin: 0">
                 题型：<span style="font-size: 32px; color: red">{{
@@ -45,10 +45,19 @@
               <div class="options" style="margin: 0">
                 <div
                   class="optionItem"
-                  v-for="option in item.options"
+                  v-for="(option, optionIndex) in item.options"
                   style="margin: 10px"
                 >
-                  <input type="checkbox" :name="option" id="" />
+                  <input
+                    type="radio"
+                    :name="item.id"
+                    value="option"
+                    @change="
+                      (e) => {
+                        answer(e, optionIndex, index);
+                      }
+                    "
+                  />
                   {{ option }}
                 </div>
               </div>
@@ -64,7 +73,13 @@
         >
           <button @click="wonder(currentIndex)">标疑</button>
           <button>转到未答题</button>
-          <button>转到标疑题</button>
+          <button
+            @click="
+              currentIndex = store.state.wonderIndexList[0] ?? currentIndex
+            "
+          >
+            转到标疑题
+          </button>
           <button @click="currentIndex--">上一题</button>
           <button @click="currentIndex++">下一题</button>
           <button @click="finish">结束考试</button>
@@ -83,17 +98,27 @@
                 <div class="topUl" style="display: flex">
                   <div
                     class="li"
-                    v-for="item in 25"
-                    style="
-                      margin: 0 1px;
-                      background-color: gray;
-                      flex: 1;
-                      text-align: center;
-                      height: 30px;
-                      line-height: 30px;
-                    "
+                    v-for="(item, index) in store.state.subjectList"
+                    :style="[
+                      { margin: '0 1px' },
+                      {
+                        backgroundColor: store.state.subjectList[index].iswonder
+                          ? 'yellow'
+                          : store.state.subjectList[index].writeAnswer
+                          ? 'gray'
+                          : 'red',
+                      },
+                      { flex: 1 },
+                      { textAlign: 'center' },
+                      { height: '30px' },
+                      { lineHeight: '30px' },
+                      {
+                        color: currentIndex === index ? '#FFFFFF' : '#000000',
+                      },
+                    ]"
+                    @click="currentIndex = index"
                   >
-                    {{ item }}
+                    {{ index + 1 }}
                   </div>
                 </div>
                 <div class="bottomUl" style="display: flex">
@@ -149,10 +174,18 @@ function finish() {
   bus.emit('finish');
 }
 
-let currentIndex = ref(1);
+let currentIndex = ref(0);
 
-function wonder(index) {
-  console.log(index);
+function wonder(index: number) {
+  store.commit('_wonder', index);
+}
+
+function answer(e: any, optionIndex: number, index: number) {
+  let arg = {
+    index: index,
+    answer: store.state.subjectList[index].options[optionIndex].slice(0, 1),
+  };
+  store.commit('_answer', arg);
 }
 
 function timeComputed(time: number) {

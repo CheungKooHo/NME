@@ -1,0 +1,402 @@
+[
+    {
+        "id": 1,
+        "type": "A1",
+        "describe": "目前谈到的医学模式转变是指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "B",
+        "resolver": "目前谈到的医学模式转变是指B.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 2,
+        "type": "A2",
+        "describe": "目前谈到的医学模式转变是指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 3,
+        "type": "A3",
+        "describe": "目前谈到的医学模式转变是指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "B",
+        "resolver": "目前谈到的医学模式转变是指B.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 4,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 5,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 6,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 7,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 8,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 9,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 10,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 11,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 12,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 13,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 14,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 15,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 16,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 17,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 18,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 19,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 20,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 21,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 22,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 23,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 24,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    },
+    {
+        "id": 25,
+        "type": "A2",
+        "describe": "目前谈到的医学指",
+        "options": [
+            "A.深入访谈法",
+            "B.深入访谈法",
+            "C.深入访谈法",
+            "D.深入访谈法",
+            "E.深入访谈法"
+        ],
+        "writeAnswer": "",
+        "correctAnswer": "A",
+        "resolver": "目前谈到的医学模式转变是指A.深入访谈法",
+        "iswonder": false
+    }
+]

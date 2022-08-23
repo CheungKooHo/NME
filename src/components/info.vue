@@ -2,8 +2,8 @@
  * @Author: Coan
  * @Date: 2022-08-22 14:13:15
  * @LastEditors: Coan
- * @LastEditTime: 2022-08-22 16:51:47
- * @FilePath: /nme/src/components/info.vue
+ * @LastEditTime: 2022-08-23 09:39:19
+ * @FilePath: /NME/src/components/info.vue
  * @Description:
 -->
 <template>
@@ -20,9 +20,11 @@
     <div style="border-bottom: 1px solid #cecccc; padding: 5px">
       剩余时间{{ restComputed() }}
     </div>
-    <div style="padding: 5px">未答题数：0</div>
+    <div style="padding: 5px">
+      未答题数：{{ store.state.noAnswerCount || 0 }}
+    </div>
     <div style="border-bottom: 1px solid #cecccc; padding: 5px">
-      标疑题数：0
+      标疑题数：{{ store.state.wonderCount || 0 }}
     </div>
     <div style="border-bottom: 1px solid #cecccc; padding: 5px">
       <button style="margin: 0 auto; display: block">刷新</button>
